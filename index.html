@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
 <style>
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+  
+.header { grid-area: header; }
+.introduction { grid-area: menu; }
+.content { grid-area: main; }
+.section { grid-area: right; }
+.footer { grid-area: footer; }
 
 .grid-container {
   display: grid;
@@ -15,23 +16,48 @@
     'menu main main main right right'
     'menu footer footer footer footer footer';
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: pink;
   padding: 10px;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.grid-container > article {
+  background-color: #FDEDEC;
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 17px;
+}
+
+.grid-container > header {
+  background-color: #FDEDEC;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 10px;
   font-size: 30px;
 }
 
+.grid-container > section {
+  background-color: #FDEDEC;
+  text-align: left;
+  padding: 20px 10px;
+  font-size: 17px;
+}
+
+.grid-container > footer {
+  text-align: right;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-style: italic;
+}
 .quote {
 font-style: italic;
 }
 
 h1 {
 text-align: center;
+}
+
+.header{
+font-size: 25px;
+font-weight: bold;
 }
 
 </style>
@@ -43,11 +69,25 @@ text-align: center;
 <p class="quote"> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
 
 <div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
+
+  <header class="header"> Nullam justo elit, porta.</header>
+  
+  <article class="introduction">
+  <h3> Nam interdum congue </h3>
+  <p class="introtext"> Suspendisse erat purus, tempor ut lorem a, sollicitudin varius odio. Sed eu dolor sit amet leo accumsan mollis. Donec vitae efficitur erat. Nulla mi purus, tempor ut fringilla eget, ornare ut tellus. Mauris convallis eu metus quis mattis. Nulla laoreet, arcu non congue faucibus, justo nisl hendrerit ipsum, non consequat tellus metus ut tellus. <p>
+  </article>
+  
+  <article class="content">
+  <h3> Morbi elit </h3>
+  <p class="maintext"> Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis faucibus, lectus nec maximus fringilla, massa eros molestie lectus, quis sodales tortor metus quis ligula. Nullam pretium ligula sit amet odio pulvinar accumsan. Praesent porttitor enim luctus sem accumsan dapibus. Donec dapibus lacus porta ipsum ultricies viverra. <p>
+   <h3> Nulla facilisi </h3>
+   <p class="maintext"> Suspendisse egestas efficitur justo, eu aliquet orci. Suspendisse leo justo, consequat in quam ac, ornare molestie metus. Aliquam erat mi, efficitur eget convallis ac, efficitur non dolor. <p>
+  </article> 
+  
+  <section class="sectiontext">
+  Duis eget massa elit. Aliquam eu iaculis sem. Mauris tincidunt elementum justo ac pellentesque. Vestibulum at purus a massa imperdiet vehicula semper id lacus. Morbi id libero at metus suscipit pellentesque. Praesent ac ultricies risus, id commodo arcu. Pellentesque rutrum arcu tortor, vel mollis erat fermentum sit amet. Sed laoreet nisi non mattis faucibus. 
+  </section>
+  <footer class="footer"> Author: Iolanda Alecu </footer>
 </div>
 
 </body>
