@@ -1,12 +1,12 @@
 <!DOCTYPE html> 
-<html>
+<html lang="la">
 <head>
+<title>HTML Elements Reference</title>
 <style>
-  
 .header { grid-area: header; }
 .introduction { grid-area: menu; }
 .content { grid-area: main; }
-.section { grid-area: right; }
+.div { grid-area: right; }
 .footer { grid-area: footer; }
 
 .grid-container {
@@ -34,7 +34,7 @@
   font-size: 30px;
 }
 
-.grid-container > section {
+.grid-container > div {
   background-color: #FDEDEC;
   text-align: left;
   padding: 20px 10px;
@@ -49,7 +49,6 @@
 }
 .quote {
 font-style: italic;
-text-align: center;
 }
 
 h1 {
@@ -72,7 +71,6 @@ font-weight: bold;
 <div class="grid-container">
 
   <header class="header"> Nullam justo elit, porta.</header>
-  
   <article class="introduction">
   <h3> Nam interdum congue </h3>
   <p class="introtext"> Suspendisse erat purus, tempor ut lorem a, sollicitudin varius odio. Sed eu dolor sit amet leo accumsan mollis. Donec vitae efficitur erat. Nulla mi purus, tempor ut fringilla eget, ornare ut tellus. Mauris convallis eu metus quis mattis. Nulla laoreet, arcu non congue faucibus, justo nisl hendrerit ipsum, non consequat tellus metus ut tellus. <p>
@@ -85,10 +83,10 @@ font-weight: bold;
    <p class="maintext"> Suspendisse egestas efficitur justo, eu aliquet orci. Suspendisse leo justo, consequat in quam ac, ornare molestie metus. Aliquam erat mi, efficitur eget convallis ac, efficitur non dolor. <p>
   </article> 
   
-  <section class="sectiontext">
+  <div class="sectiontext">
   Duis eget massa elit. Aliquam eu iaculis sem. Mauris tincidunt elementum justo ac pellentesque. Vestibulum at purus a massa imperdiet vehicula semper id lacus. Morbi id libero at metus suscipit pellentesque. Praesent ac ultricies risus, id commodo arcu. Pellentesque rutrum arcu tortor, vel mollis erat fermentum sit amet. Sed laoreet nisi non mattis faucibus. 
-  </section>
-  <footer class="footer"> Author: Iolanda Alecu </footer>
+  </div>
+  <footer class="footer">Author: Iolanda Alecu</footer>
 </div>
 
 </body>
